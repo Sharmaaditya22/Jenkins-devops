@@ -1,13 +1,16 @@
 //Scripted
 //Declarative
 pipeline {
-	    agent { docker {image 'node: 13.8'}}
+	    agent any
 		stages{
 			stage('Build'){
 				steps{
-					sh "mvn --version"
+					echo "$PATH"
 				echo "Build"
-			
+				echo "BUILD NUMBER - $env.BUILD_NUMBER"
+			echo "BUILD_ID -$env.BUILD_ID"
+echo "BUILD_TAG - $env.BUILD_TAG"
+			echo "BUILD_URL - $env.BUILD_URL"
 				}
 			}
 

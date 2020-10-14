@@ -1,14 +1,14 @@
 //Scripted
 //Declarative
 
-node{
-	stage('build'){
-		echo "build"
-	}
-	stage('Test')
-{
-	echo "Test"
-}}
+// node{
+// 	stage('build'){
+// 		echo "build"
+// 	}
+// 	stage('Test')
+// {
+// 	echo "Test"
+// }}
 
 // node{
 // 	echo "Build"
@@ -16,34 +16,34 @@ node{
 // 	echo "integration test"
 // }
 
-// pipeline {
-// 	    agent any // where your code run
-// 		stages{
-// 			stage('Build'){
-// 				steps{
-// 					echo "$PATH"
-// 				echo "Build"
-// 				echo "BUILD NUMBER - $env.BUILD_NUMBER"
-// 			echo "BUILD_ID -$env.BUILD_ID"
-// echo "BUILD_TAG - $env.BUILD_TAG"
-// 			echo "BUILD_URL - $env.BUILD_URL"
-// 				}
-// 			}
+pipeline {
+	    agent any // where your code run
+		stages{
+			stage('Build'){
+				steps{
+					echo "$PATH"
+				echo "Build"
+				echo "BUILD NUMBER - $env.BUILD_NUMBER"
+			echo "BUILD_ID -$env.BUILD_ID"
+echo "BUILD_TAG - $env.BUILD_TAG"
+			echo "BUILD_URL - $env.BUILD_URL"
+				}
+			}
 
-// 			stage('Test'){
-// 				steps{
+			stage('Test'){
+				steps{
 				
-// 				echo "Test"
+				echo "Test"
 				
-// 				}
-// 			}
+				}
+			}
 
-// 			stage('Integration Test'){
-// 				steps{
+			stage('Integration Test'){
+				steps{
 				
-// 				echo "Integration Test"
-// 				}
-// 			}
-// 		}
+				echo "Integration Test"
+				}
+			}
+		}
 		
-// }
+}

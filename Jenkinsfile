@@ -1,16 +1,20 @@
 //Scripted
 //Declarative
 
+// node{
+// 	stage('build'){
+// 		echo "build"
+// 	}
+// 	stage('Test')
+// {
+// 	echo "Test"
+// }}
+
 node{
-	stage('build'){
-		echo "build"
-	}
-	stage('Test')
-{
+	echo "Build"
 	echo "Test"
-}}
-
-
+	echo "integration test"
+}
 
 // pipeline {
 // 	    agent any
